@@ -39,17 +39,17 @@ Hence, the **Monetary** column represents the total amount spent by each custome
 Next, I created Score columns for each customer in reference to the **RFM** model. This Score ranks customers to a set, identified by a number from (topmost) 10 to (least) 1. 
 To do this, I created a new column with the header **Monetary Score**, where I ranked customer(s) according to their monetary value using the syntax below:
 
-    = PERCENTRANK.INC ( $B$2:$B$4373, B2, 1 ) * 10
+       = PERCENTRANK.INC ( $B$2:$B$4373, B2, 1 ) * 10
 
 and the syntax was used across the **Monetary Score** column for each customer.
 Next, I created a **Frequency Score** column, where I ranked customer(s) according to their frequency value using the syntax below:
 
-    = PERCENTRANK.INC ( $C$2:$C$4373, C2, 1 ) * 10
+         = PERCENTRANK.INC ( $C$2:$C$4373, C2, 1 ) * 10
 
 and the syntax was applied across the **Frequency Score** column.
 Next, I created a **Recency Score** column, where I ranked customer(s) according to their recency value using the syntax below;
 
-  = ( 1 – PERCENTRANK.INC ( $F$2:$F$4373, F2 , 1 )) * 10
+        = ( 1 – PERCENTRANK.INC ( $F$2:$F$4373, F2 , 1 )) * 10
 
 ## Step 2: Data Analysis and Visualization
 
@@ -170,7 +170,7 @@ From the **RFM** (recency, frequency, monetary) model applied above, I was able 
 
 It is observed that there is positive customer behavior towards the company’s brands and products.
 And since the Top and Average Customers make up a majority of the customers evaluated, it is advisable that the marketing campaign and sales execution strategy be focused on up-selling company brands and products. 
-Also, every customer should be engaged actively, since the At-Risk and Need-Attention Customers have a high recency percentage of about 71%, this implies that these customer segments are new customers to the company products and they are unaware of the company’s products. Hence, it is advisable to execute product adverts and promotions to this segment of customers and prospects informed about the company’s products and brands. 
+Also, every customer should be engaged actively, since the At-Risk and Need-Attention Customers have a high recency percentage of about 71%, this implies that these customer segments are new customers to the company products and they are unaware of the company’s products. Hence, it is advisable to execute product adverts and promotions to this segment of customers and prospects, to keep them informed about the company’s products and brands. 
 
 
 ## Appreciation:
